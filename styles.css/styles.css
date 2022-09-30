@@ -1,31 +1,60 @@
 /* General style */
 :root {
-    --clr-orange: hsl(25, 97%, 53%);
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-light-grey: hsl(217, 12%, 63%);
-    --clr-medium-grey: hsl(216, 12%, 54%);
-    --clr-dark-blue: hsl(213, 19%, 18%);
-    --clr-vDark-Blue: hsl(216, 12%, 8%);
+	--clr-orange: hsl(25, 97%, 53%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-light-grey: hsl(217, 12%, 63%);
+	--clr-medium-grey: hsl(216, 12%, 54%);
+	--clr-dark-blue: hsl(213, 19%, 18%);
+	--clr-vDark-Blue: hsl(216, 12%, 8%);
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-    font-size: 1.5rem;
-    font-family: 'Overpass', sans-serif;
-    background: var(--clr-vDark-Blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-size: 1.5rem;
+	font-family: "Overpass", sans-serif;
+	background: var(--clr-vDark-Blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Container */
 
 .container {
-    border-radius: 1rem;
-    background: var(--clr-dark-blue);
-    width: 200px;
-    height: 200px;
+	border-radius: 1rem;
+	background: var(--clr-dark-blue);
+	max-width: 80%;
+}
+
+.img-container {
+	border-radius: 100%;
+	background: var(--clr-medium-grey);
+}
+
+/* Content */
+
+.header {
+	color: var(--clr-white);
+}
+
+.content {
+	color: var(--clr-light-grey);
+}
+
+/* Buttons */
+
+.btn {
+	color: var(--clr-light-grey);
+	background: var(--clr-medium-grey);
+	border: none;
+	border-radius: 30px;
+	outline: none;
+}
+
+#submit {
+	background: var(--clr-orange);
+	color: var(--clr-white);
 }
