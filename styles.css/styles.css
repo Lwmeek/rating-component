@@ -17,6 +17,7 @@ body {
 	font-family: "Overpass", sans-serif;
 	background: var(--clr-vDark-Blue);
 	display: flex;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -27,11 +28,22 @@ body {
 	border-radius: 1rem;
 	background: var(--clr-dark-blue);
 	max-width: 80%;
+	padding: 1rem;
 }
 
 .img-container {
 	border-radius: 100%;
-	background: var(--clr-medium-grey);
+	background: var(--clr-white);
+	width: 4rem;
+	height: 4rem;
+	line-height: 3rem;
+	text-align: center;
+}
+
+/* Images */
+
+.logo img {
+	margin-top: 1.2rem;
 }
 
 /* Content */
@@ -46,15 +58,28 @@ body {
 
 /* Buttons */
 
+.btn-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
 .btn {
 	color: var(--clr-light-grey);
-	background: var(--clr-medium-grey);
 	border: none;
-	border-radius: 30px;
+	border-radius: 50%;
+	height: 4rem;
+	width: 4rem;
+	line-height: 2.5rem;
 	outline: none;
+	padding: 1rem;
+	margin: 0 0.7rem;
 }
 
 #submit {
 	background: var(--clr-orange);
 	color: var(--clr-white);
+	width: 80%;
+	border-radius: 50px;
+	letter-spacing: 0.3rem;
 }
