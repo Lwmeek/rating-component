@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-family: "Overpass", sans-serif;
 	background: var(--clr-vDark-Blue);
 	display: flex;
@@ -25,10 +25,18 @@ body {
 /* Container */
 
 .container {
-	border-radius: 1rem;
+	border-radius: 1.5rem;
 	background: var(--clr-dark-blue);
-	max-width: 80%;
-	padding: 1rem;
+	width: 80%;
+	max-width: 350px;
+	height: 36%;
+	max-height: 400px;
+	padding: 1.5rem;
+}
+
+div.container > * {
+	margin-left: 1.2rem;
+	margin-top: 1.5rem;
 }
 
 .img-container {
@@ -38,6 +46,7 @@ body {
 	height: 4rem;
 	line-height: 3rem;
 	text-align: center;
+	margin-bottom: 2rem;
 }
 
 /* Images */
@@ -50,10 +59,13 @@ body {
 
 .header {
 	color: var(--clr-white);
+	margin-bottom: 1.5rem;
 }
 
 .content {
 	color: var(--clr-light-grey);
+	line-height: 2.3rem;
+	margin-bottom: 2.5rem;
 }
 
 /* Buttons */
@@ -73,13 +85,28 @@ body {
 	line-height: 2.5rem;
 	outline: none;
 	padding: 1rem;
-	margin: 0 0.7rem;
+	margin: 0 1.4rem 0 0;
+}
+
+.ratings-btns {
+	margin-bottom: 1.9rem;
 }
 
 #submit {
 	background: var(--clr-orange);
 	color: var(--clr-white);
-	width: 80%;
+	width: 97%;
 	border-radius: 50px;
 	letter-spacing: 0.3rem;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+
+#submit:hover {
+	cursor: pointer;
+	background: var(--clr-white);
+	color: var(--clr-orange);
+}
+
+@media screen and (min-width: 394px) {
 }
