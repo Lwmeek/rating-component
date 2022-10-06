@@ -35,9 +35,8 @@ body {
 	padding: 1.5rem;
 }
 
-div.container > * {
-	margin-left: 1.2rem;
-	margin-top: 1.5rem;
+.container-secondary {
+	text-align: center;
 }
 
 .img-container {
@@ -48,6 +47,8 @@ div.container > * {
 	line-height: 3rem;
 	text-align: center;
 	margin-bottom: 2rem;
+	margin-left: 1.5rem;
+	margin-top: 1.2rem;
 }
 
 /* Images */
@@ -56,17 +57,32 @@ div.container > * {
 	margin-top: 1.2rem;
 }
 
+.img-secondary {
+	margin-top: 2rem;
+}
+
 /* Content */
 
 .header {
 	color: var(--clr-white);
 	margin-bottom: 1.5rem;
+	margin-left: 1.5rem;
+}
+
+.header-secondary {
+	margin-left: 0;
 }
 
 .content {
 	color: var(--clr-light-grey);
 	line-height: 2.3rem;
 	margin-bottom: 2.5rem;
+	margin-left: 1.5rem;
+}
+
+.content-secondary {
+	margin: 0 auto;
+	max-width: 35ch;
 }
 
 /* Buttons */
@@ -88,7 +104,7 @@ div.container > * {
 	outline: none;
 	padding: 1rem;
 	margin: 0 1.4rem 0 0;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .btn:hover {
@@ -106,6 +122,7 @@ div.container > * {
 	margin-bottom: 1.9rem;
 	display: flex;
 	flex-direction: row-reverse;
+	gap: 0.3rem;
 }
 
 #submit {
@@ -115,6 +132,7 @@ div.container > * {
 	border-radius: 50px;
 	letter-spacing: 0.3rem;
 	font-weight: bold;
+	margin-left: 1.5rem;
 	transition: all 0.3s;
 }
 
@@ -128,4 +146,14 @@ div.container > * {
 	.ratings-btns {
 		gap: 1.5rem;
 	}
+}
+
+/* Display */
+
+.display {
+	width: 60%;
+	height: 27px;
+	background: var(--clr-dark-blue-btn);
+	margin: 2rem auto 2.5rem;
+	border-radius: 20px;
 }
