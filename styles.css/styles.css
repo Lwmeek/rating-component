@@ -151,9 +151,20 @@ body {
 /* Display */
 
 .display {
-	width: 60%;
-	height: 27px;
+	width: 50%;
+	height: 30px;
 	background: var(--clr-dark-blue-btn);
+	color: var(--clr-orange);
 	margin: 2rem auto 2.5rem;
 	border-radius: 20px;
+}
+.comment {
+	padding-top: .9rem;
+}
+
+/* Selected rate */
+
+.active {
+	color: var(--clr-white);
+	background: var(--clr-orange);
 }
