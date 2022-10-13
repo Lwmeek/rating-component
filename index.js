@@ -1,16 +1,31 @@
 /* Variables */
-const form = document.querySelector("#form");
 const submit = document.querySelector("#submit");
+const rating = document.querySelector(".ratings");
+const buttons = document.querySelectorAll(".btn");
 const display = document.querySelector(".comment");
-const rating = document.querySelectorAll(".rate");
+const finishScreen = document.querySelector(".container-secondary");
+const startScreen = document.querySelector(".container-primary");
+
+let elementClicked = false;
 
 /* Pick rating */
-rating.forEach((rate) => {
-	rate.addEventListener("click", (event) => {
+
+buttons.forEach((button) => {
+	button.addEventListener("click", (event) => {
 		event.preventDefault();
-		document.querySelector(".rate.active")?.classList?.remove("active");
-		rate.classList.toggle("active");
+		elementClicked = true;
+		console.log(button.textContent);
+		display.textContent = `You selected ${button.textContent} out of 5`;
 	});
 });
 
-/*display.textContent = `You selected 4 out of 5`;*/
+/* Submit rating */
+
+submit.addEventListener("click", (event) => {
+	event.preventDefault();
+	if (elementClicked === false) {
+		throw Error("A rating was not selected");
+	}
+	finishScreen.classList.remove("hidden");
+	startScreen.classList.add("hidden");
+});
