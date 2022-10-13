@@ -1,6 +1,5 @@
 /* Variables */
 const submit = document.querySelector("#submit");
-const rating = document.querySelector(".ratings");
 const buttons = document.querySelectorAll(".btn");
 const display = document.querySelector(".comment");
 const finishScreen = document.querySelector(".container-secondary");
